@@ -723,7 +723,8 @@ extension Schedule where B == Never, A == Any, State == Never {
         Schedule(
             initial: EnvIO.never()^,
             extract: { _, never in never },
-            update: { _, _ in EnvIO.never()^ })
+            update: { _, _ in EnvIO.never()^ }
+        )
     }
 }
 
